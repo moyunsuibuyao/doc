@@ -1,30 +1,25 @@
 module.exports = {
   title: '交易文档',
-  head: [
-    ['link', { rel: 'icon', href: '/logo.png' }]
-  ],
+  dest: './dist',  // 设置输出目录
+  base: '/docs/', // 设置站点根路径
+  repo: 'https://github.com/moyunsuibuyao/docs.git', // 添加 github 链接
+  head: [],
   description: '交易平台组件文档',
   markdown:{
     lineNumber: false
   },
   themeConfig : {
     // 添加侧边栏
-    // sidebar: {
-    //   '/search/': [
-    //     ['', '基本用法'],
-    //     ['controls', '搜索控件']
-    //   ]
-    // },
     sidebar: [
       {
         title: '搜索组件',
         collapsable: false,
         children: [
-          ['/search/', '基本用法'],
+          ['/search/', '基本用法和功能'],
           ['/search/controls', '搜索控件']
         ]
       },
     ],
     sidebarDepth: 2
   }
-}
+};
