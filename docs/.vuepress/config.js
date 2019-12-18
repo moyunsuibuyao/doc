@@ -16,7 +16,7 @@ module.exports = {
         collapsable: false,
         children: [
           ['/search/', '基本用法和功能'],
-          ['/search/controls', '搜索控件'],
+          ['/search/Base', '基本属性'],
           ['/search/button', '按钮控件'],
         ]
       },
